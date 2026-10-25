@@ -1,0 +1,132 @@
+{
+  "rows": 1000,
+  "correlations": {
+    "math-reading": 0.818,
+    "math-writing": 0.803,
+    "reading-writing": 0.955
+  },
+  "avg_by": {
+    "test_prep": [
+      {
+        "category": "completed",
+        "students": 358,
+        "math": 69.7,
+        "reading": 73.9,
+        "writing": 74.4,
+        "average": 72.7
+      },
+      {
+        "category": "none",
+        "students": 642,
+        "math": 64.1,
+        "reading": 66.5,
+        "writing": 64.5,
+        "average": 65.0
+      }
+    ],
+    "lunch": [
+      {
+        "category": "standard",
+        "students": 645,
+        "math": 70.0,
+        "reading": 71.7,
+        "writing": 70.8,
+        "average": 70.8
+      },
+      {
+        "category": "free/reduced",
+        "students": 355,
+        "math": 58.9,
+        "reading": 64.7,
+        "writing": 63.0,
+        "average": 62.2
+      }
+    ],
+    "parent_education": [
+      {
+        "category": "master's degree",
+        "students": 59,
+        "math": 69.7,
+        "reading": 75.4,
+        "writing": 75.7,
+        "average": 73.6
+      },
+      {
+        "category": "bachelor's degree",
+        "students": 118,
+        "math": 69.4,
+        "reading": 73.0,
+        "writing": 73.4,
+        "average": 71.9
+      },
+      {
+        "category": "associate's degree",
+        "students": 222,
+        "math": 67.9,
+        "reading": 70.9,
+        "writing": 69.9,
+        "average": 69.6
+      },
+      {
+        "category": "some college",
+        "students": 226,
+        "math": 67.1,
+        "reading": 69.5,
+        "writing": 68.8,
+        "average": 68.5
+      },
+      {
+        "category": "some high school",
+        "students": 179,
+        "math": 63.5,
+        "reading": 66.9,
+        "writing": 64.9,
+        "average": 65.1
+      },
+      {
+        "category": "high school",
+        "students": 196,
+        "math": 62.1,
+        "reading": 64.7,
+        "writing": 62.4,
+        "average": 63.1
+      }
+    ],
+    "gender": [
+      {
+        "category": "female",
+        "students": 518,
+        "math": 63.6,
+        "reading": 72.6,
+        "writing": 72.5,
+        "average": 69.6
+      },
+      {
+        "category": "male",
+        "students": 482,
+        "math": 68.7,
+        "reading": 65.5,
+        "writing": 63.3,
+        "average": 65.8
+      }
+    ]
+  },
+  "math_prediction_test_set": {
+    "Baseline (mean)": {
+      "rmse": 15.48,
+      "r2": -0.004
+    },
+    "LinearRegression": {
+      "rmse": 5.658,
+      "r2": 0.866
+    },
+    "RandomForest": {
+      "rmse": 6.659,
+      "r2": 0.814
+    },
+    "GradientBoosting": {
+      "rmse": 7.151,
+      "r2": 0.786
+    }
+  }
+}
